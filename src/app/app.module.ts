@@ -1,16 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {SimpleContactComponent} from './shared/components/simple-contact/simple-contact.component';
+import {HeaderBlockComponent} from './shared/components/header-block/header-block.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SimpleContactComponent,
+    HeaderBlockComponent
   ],
   imports: [
-    BrowserModule
+    AppRoutingModule,
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
