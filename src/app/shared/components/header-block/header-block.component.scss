@@ -1,6 +1,18 @@
 header {
-  height: 200px;
+  height: 80px;
   width: 100%;
-  background-color: #062323;
+  background-color: #6b6b6b;
   color: #f1c321
+}
+
+.header_container {
+  height: 100%;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  &:first-child {
+    margin-right: 50px;
+  }
 }

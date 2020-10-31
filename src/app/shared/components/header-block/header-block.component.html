@@ -1,5 +1,20 @@
-<div>
-  <div class="container">
-    <h3>{{headerText}}</h3>
+<header>
+  <div class="header_container container d-flex justify-content-around">
+    <picture>
+      <img class="header-logo" src="./assets/img/logo.png" alt="Historical games">
+    </picture>
+    <div class="contacts">
+      <div *ngFor="let contact of contacts">
+        <app-simple-contact
+          [contactText]="contact.contactText"
+          [contactIconType]="contact.contactIconType"
+        ></app-simple-contact>
+      </div>
+    </div>
+
+    <app-small-search-field></app-small-search-field>
+
   </div>
-</div>
+
+
+</header>

@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-simple-contact',
   templateUrl: './simple-contact.component.html',
   styleUrls: ['./simple-contact.component.scss']
 })
-export class SimpleContactComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class SimpleContactComponent {
+  @Input() contactIconType: string;
+  @Input() contactText: string;
 }

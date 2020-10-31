@@ -1,0 +1,19 @@
+.search-item {
+  display: flex;
+}
+
+.search-item__icon {
+  margin-top: 5px;
+}
+
+button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0 3px 3px 0;
+}
+
+input {
+  line-height: 42px;
+  border: 2px solid #fff;
+  padding-left: 10px;
+}
