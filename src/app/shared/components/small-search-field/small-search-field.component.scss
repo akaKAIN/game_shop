@@ -8,13 +8,23 @@
 
 button {
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 0 3px 3px 0;
 }
 
 input {
-  line-height: 42px;
-  border: 2px solid #fff;
+  line-height: 45px;
+  border-left-width: medium;
+  border-top-width: medium;
+  border-bottom-width: medium;
+  border-right-width: inherit;
+  border-style: solid;
+  border-color: #ffffff;
   padding-left: 10px;
   border-radius: 3px 0 0 3px;
+  background-color: transparent;
+  color: #ffffff;
+  &::placeholder {
+    color: #ffffff;
+  }
 }

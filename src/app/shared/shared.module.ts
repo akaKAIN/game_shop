@@ -4,6 +4,8 @@ import {SimpleContactComponent} from './components/simple-contact/simple-contact
 import {NoPageComponent} from './components/no-page/no-page.component';
 import {CommonModule} from '@angular/common';
 import { SmallSearchFieldComponent } from './components/small-search-field/small-search-field.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -11,14 +13,16 @@ import { SmallSearchFieldComponent } from './components/small-search-field/small
     SimpleContactComponent,
     NoPageComponent,
     SmallSearchFieldComponent,
+    NavBarComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [
     CommonModule,
     HeaderBlockComponent,
     SimpleContactComponent,
     NoPageComponent,
-    SmallSearchFieldComponent
+    SmallSearchFieldComponent,
+    NavBarComponent
   ]
 })
 

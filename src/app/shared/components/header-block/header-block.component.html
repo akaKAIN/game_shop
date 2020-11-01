@@ -3,18 +3,15 @@
     <picture>
       <img class="header-logo" src="./assets/img/logo.png" alt="Historical games">
     </picture>
-    <div class="contacts">
-      <div *ngFor="let contact of contacts">
+    <div class="contacts d-none d-lg-flex">
+      <div class="contact" *ngFor="let contact of contacts">
         <app-simple-contact
           [contactText]="contact.contactText"
           [contactIconType]="contact.contactIconType"
         ></app-simple-contact>
       </div>
     </div>
-
     <app-small-search-field></app-small-search-field>
-
   </div>
-
-
 </header>
+<app-nav-bar></app-nav-bar>

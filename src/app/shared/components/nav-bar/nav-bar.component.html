@@ -1,0 +1,7 @@
+<div class="nav-bar">
+  <div class="nav-bar__wrap">
+    <div routerLinkActive="active" class="nav-bar__wrap__item" *ngFor="let option of menuOptions">
+      <a class="item__link" routerLinkActive="active" [routerLink]="option.link">{{option.text | titlecase}}</a>
+    </div>
+  </div>
+</div>
