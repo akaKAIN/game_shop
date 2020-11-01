@@ -1,3 +1,17 @@
+@import '../../../../styles';
+
 .contact-item {
-  color: #fff;
+  color: $color-logo;
+  display: flex;
+  flex-direction: column;
+  font-family: Veneer, serif;
+  font-size: 1.4rem;
+}
+.contact-info {
+  text-decoration: none;
+  color: $color-logo;
+}
+
+small {
+  color: $color-logo-passive;
 }

@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+$color-logo: #dd4407;
+$bg-main: #282828;
+$bg-main-lighter: #393939;
+$color-logo-passive: #b3927f;
+
+@font-face {
+  font-family: Kindly;
+  src: url(assets/fonts/Mr_KindlyJasmineG/mr_KindlyJasmineG.woff) format('woff'),
+  url(assets/fonts/Mr_KindlyJasmineG/mr_KindlyJasmineG.woff2) format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Veneer;
+  src: url(assets/fonts/VeneerW01Two/VeneerW01Two.woff) format('woff'),
+  url(assets/fonts/VeneerW01Two/VeneerW01Two.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Fulbo;
+  src: url(assets/fonts/FulboArgenta/FulboArgenta.woff) format('woff'),
+  url(assets/fonts/FulboArgenta/FulboArgenta.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $bg-main;
+}

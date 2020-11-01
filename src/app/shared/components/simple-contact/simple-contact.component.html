@@ -1,8 +1,13 @@
 <div class="contact-item">
+  <small>{{contactTitle}}</small>
   <div class="contact-wrapper d-inline-flex">
-    <div class="contact__icon mr-2">
+    <div class="contact__icon mr-2 mt-1">
       <i class="material-icons">{{contactIconType}}</i>
     </div>
-    <div class="contact-info">{{contactText}}</div>
+
+    <a *ngIf="contactLink; else noLink" class="contact-info" [href]="contactLink">{{contactText}}</a>
+    <ng-template #noLink>
+      <div class="contact-info">{{contactText}}</div>
+    </ng-template>
   </div>
 </div>

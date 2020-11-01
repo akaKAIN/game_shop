@@ -7,15 +7,18 @@ import {SimpleContactItem} from '../../../models/base';
   styleUrls: ['./header-block.component.scss']
 })
 export class HeaderBlockComponent {
-  headerText = 'Hello from HEADER';
   contacts: SimpleContactItem[] = [
     {
-      contactText: '+999 888 1232',
-      contactIconType: 'phone'
+      contactTitle: 'WhatsApp',
+      contactText: '+7 926 890 6086',
+      contactIconType: 'phone',
+      contactLink: 'https://wa.me/79268906086'
     },
     {
-      contactText: 'example@gmail.com',
-      contactIconType: 'mail'
+      contactTitle: 'Instagram',
+      contactIconType: 'motion_photos_on',
+      contactText: '@realmeat_khv',
+      contactLink: 'https://instagram.com/_u/realmeat_khv'
     },
   ];
 }

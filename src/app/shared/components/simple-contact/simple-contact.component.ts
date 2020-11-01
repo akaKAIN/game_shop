@@ -6,6 +6,8 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./simple-contact.component.scss']
 })
 export class SimpleContactComponent {
+  @Input() contactTitle: string;
   @Input() contactIconType: string;
   @Input() contactText: string;
+  @Input() contactLink?: string;
 }
