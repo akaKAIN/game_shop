@@ -1,0 +1,22 @@
+<header class="container-fluid">
+  <div class="header_container d-flex justify-content-sm-around">
+    <div class="logo">
+      RealMeat
+    </div>
+    <div class="contacts d-none d-lg-flex">
+      <div class="contact" *ngFor="let contact of contacts">
+        <app-simple-contact
+          [contactTitle]="contact.contactTitle"
+          [contactText]="contact.contactText"
+          [contactIconType]="contact.contactIconType"
+          [contactLink]="contact.contactLink"
+        ></app-simple-contact>
+      </div>
+    </div>
+    <app-small-search-field></app-small-search-field>
+  </div>
+</header>
+<div class="container-fluid">
+  <app-nav-bar></app-nav-bar>
+</div>
+

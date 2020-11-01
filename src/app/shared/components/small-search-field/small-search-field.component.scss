@@ -1,0 +1,36 @@
+@import '../../../../styles';
+
+.search-item {
+  display: flex;
+}
+
+.search-item__icon {
+  margin-top: 5px;
+}
+
+button {
+  color: $color-logo-passive;
+  border: 2px solid $color-logo-passive;
+  border-radius: 0 3px 3px 0;
+  &:focus {
+    color: $color-logo;
+    border: 2px solid $color-logo;
+  }
+}
+
+input {
+  line-height: 45px;
+  border-left-width: medium;
+  border-top-width: medium;
+  border-bottom-width: medium;
+  border-right-width: inherit;
+  border-style: solid;
+  border-color: $color-logo-passive;
+  padding-left: 10px;
+  border-radius: 3px 0 0 3px;
+  background-color: transparent;
+  color: $color-logo-passive;
+  &::placeholder {
+    color: $color-logo-passive;
+  }
+}

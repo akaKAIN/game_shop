@@ -1,0 +1,19 @@
+.error {
+  &-code {
+    height: 20vh;
+    font-size: 15vh;
+    font-family: Veneer, serif;
+  }
+  &-text {
+    height: 10vh;
+    font-size: 5vh;
+  }
+}
+
+.not-found-block {
+  color: #ffffff;
+}
+
+button {
+  margin-top: 15vh;
+}
