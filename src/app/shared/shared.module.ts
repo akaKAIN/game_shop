@@ -6,6 +6,7 @@ import {CommonModule} from '@angular/common';
 import { SmallSearchFieldComponent } from './components/small-search-field/small-search-field.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {RouterModule} from '@angular/router';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import {RouterModule} from '@angular/router';
     SmallSearchFieldComponent,
     NavBarComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ReactiveFormsModule],
   exports: [
     CommonModule,
     HeaderBlockComponent,

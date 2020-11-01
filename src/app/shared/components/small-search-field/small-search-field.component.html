@@ -1,6 +1,8 @@
 <div class="search-item d-none d-sm-flex">
-  <label><input type="text" placeholder="Search" #input (keydown.enter)="submit(input.value)"></label>
-  <button class="search-item__btn btn" (click)="submit(input.value)">
-    <i class="material-icons search-item__icon">search</i>
-  </button>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <label><input type="text" placeholder="Search" formControlName="search"></label>
+    <button class="search-item__btn btn" type="submit">
+      <i class="material-icons search-item__icon">search</i>
+    </button>
+  </form>
 </div>
