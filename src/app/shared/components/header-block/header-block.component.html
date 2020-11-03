@@ -1,9 +1,9 @@
 <header class="container-fluid">
-  <div class="header_container d-flex justify-content-sm-around">
+  <div class="header_container d-flex justify-content-between justify-content-md-around">
     <div class="logo">
       RealMeat
     </div>
-    <div class="contacts d-none d-lg-flex">
+    <div class="contacts d-flex">
       <div class="contact" *ngFor="let contact of contacts">
         <app-simple-contact
           [contactTitle]="contact.contactTitle"

@@ -12,7 +12,7 @@ export class HeaderBlockComponent {
       contactTitle: 'WhatsApp',
       contactText: '+7 926 890 6086',
       contactIconType: 'phone',
-      contactLink: 'https://wa.me/79268906086'
+      contactLink: 'https://wa.me/79098438948'
     },
     {
       contactTitle: 'Instagram',

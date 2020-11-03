@@ -14,10 +14,22 @@ header {
 
 .contacts {
   display: flex;
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
 }
 
 .contact:last-child {
   margin-left: 3rem;
+  @media (max-width: 575.98px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 480px) {
+    margin-left: 1rem;
+  }
+  @media (max-width: 350px) {
+    margin-left: 0 !important;
+  }
 }
 
 .logo {
