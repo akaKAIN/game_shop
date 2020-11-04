@@ -1,0 +1,15 @@
+<form class="search-form" [formGroup]="form" (ngSubmit)="search()">
+  <mat-form-field class="search-field">
+    <mat-label>Поиск</mat-label>
+    <input
+      matInput
+      placeholder="Название изделия"
+      type="text"
+      formControlName="search">
+
+  </mat-form-field>
+  <button type="submit">
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+  </button>
+</form>
+

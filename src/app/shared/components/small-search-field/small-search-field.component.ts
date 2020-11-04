@@ -17,5 +17,6 @@ export class SmallSearchFieldComponent implements OnInit {
 
   submit(): void {
     console.log({...this.form.value});
+    this.form.reset();
   }
 }

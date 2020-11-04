@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 $color-logo: #dd4407;
 $bg-main: #282828;
 $bg-main-lighter: #393939;
@@ -31,3 +33,6 @@ body {
   box-sizing: border-box;
   background-color: $bg-main;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

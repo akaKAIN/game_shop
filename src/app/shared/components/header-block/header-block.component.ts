@@ -16,7 +16,7 @@ export class HeaderBlockComponent {
     },
     {
       contactTitle: 'Instagram',
-      contactIconType: 'motion_photos_on',
+      contactIconType: 'mobile_screen_share',
       contactText: '@realmeat_khv',
       contactLink: 'https://instagram.com/_u/realmeat_khv'
     },

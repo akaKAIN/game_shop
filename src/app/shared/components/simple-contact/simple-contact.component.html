@@ -2,7 +2,7 @@
   <small>{{contactTitle}}</small>
   <div class="contact-wrapper d-inline-flex">
     <div class="contact__icon mr-2 mt-1">
-      <i class="material-icons">{{contactIconType}}</i>
+      <mat-icon aria-hidden="false">{{contactIconType}}</mat-icon>
     </div>
 
     <a *ngIf="contactLink; else noLink" class="contact-info" [href]="contactLink">{{contactText}}</a>

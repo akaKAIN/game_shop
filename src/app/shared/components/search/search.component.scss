@@ -1,0 +1,33 @@
+@import "../../../../styles";
+
+::ng-deep .mat-form-field-label {
+  /*change color of label*/
+  color: $color-logo-passive !important;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: $color-logo !important;
+}
+
+::ng-deep .mat-form-field-underline {
+  /*change color of underline*/
+  background-color: $color-logo-passive !important;
+}
+
+::ng-deep .mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: $color-logo !important;;
+}
+
+input {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+::ng-deep .mat-form-field-infix {
+  .mat-input-element::placeholder {
+    color: $color-logo-passive
+  }
+}
+
+

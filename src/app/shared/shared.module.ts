@@ -7,6 +7,9 @@ import { SmallSearchFieldComponent } from './components/small-search-field/small
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {RouterModule} from '@angular/router';
 import {ReactiveFormsModule} from '@angular/forms';
+import { MenuListComponent } from './components/menu-list/menu-list.component';
+import {MaterialsModule} from '../modules/materials/materials.module';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -15,15 +18,23 @@ import {ReactiveFormsModule} from '@angular/forms';
     NoPageComponent,
     SmallSearchFieldComponent,
     NavBarComponent,
+    MenuListComponent,
+    SearchComponent,
   ],
-  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    ReactiveFormsModule,
+    MaterialsModule
+  ],
   exports: [
     CommonModule,
     HeaderBlockComponent,
     SimpleContactComponent,
     NoPageComponent,
     SmallSearchFieldComponent,
-    NavBarComponent
+    NavBarComponent,
+    MenuListComponent,
   ]
 })
 

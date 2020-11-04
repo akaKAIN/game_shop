@@ -18,8 +18,13 @@ button {
   }
 }
 
+form {
+  display: flex;
+  align-items: center;
+}
+
 input {
-  line-height: 45px;
+  line-height: 43.5px;
   border-left-width: medium;
   border-top-width: medium;
   border-bottom-width: medium;
@@ -29,7 +34,7 @@ input {
   padding-left: 10px;
   border-radius: 3px 0 0 3px;
   background-color: transparent;
-  color: $color-logo-passive;
+  color: $color-logo;
   &::placeholder {
     color: $color-logo-passive;
   }
