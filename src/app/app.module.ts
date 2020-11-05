@@ -5,8 +5,8 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeModule} from './modules/home/home.module';
 import {ContactModule} from './modules/contact/contact.module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialsModule} from './modules/materials/materials.module';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,6 @@ import {MaterialsModule} from './modules/materials/materials.module';
     BrowserModule,
     HomeModule,
     ContactModule,
-    BrowserAnimationsModule,
     MaterialsModule,
   ],
   providers: [],

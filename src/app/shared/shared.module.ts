@@ -35,6 +35,7 @@ import { SearchComponent } from './components/search/search.component';
     SmallSearchFieldComponent,
     NavBarComponent,
     MenuListComponent,
+    RouterModule,
   ]
 })
 

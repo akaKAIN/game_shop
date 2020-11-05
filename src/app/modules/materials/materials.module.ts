@@ -4,6 +4,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatCheckboxModule,
     MatDividerModule,
+    BrowserAnimationsModule,
   ],
   exports: [
     MatButtonModule,
@@ -21,6 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     MatCheckboxModule,
     MatDividerModule,
+    BrowserAnimationsModule,
   ]
 })
 export class MaterialsModule {

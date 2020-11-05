@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MenuListComponent } from './menu-list.component';
+import {MenuListComponent} from './menu-list.component';
+import {SharedModule} from '../../shared.module';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('MenuListComponent', () => {
   let component: MenuListComponent;
@@ -8,9 +10,10 @@ describe('MenuListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MenuListComponent ]
+      declarations: [MenuListComponent],
+      imports: [SharedModule, RouterTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
