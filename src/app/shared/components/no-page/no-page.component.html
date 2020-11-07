@@ -1,8 +1,8 @@
 <div class="container-fluid text-center mt-5 not-found-block">
-  <h3>Sorry, but page what are you looking for is didn't exist</h3>
+  <h3 class="my-5">Sorry, but page what are you looking for is didn't exist</h3>
   <div class="error-code">{{errorCode}}</div>
   <div class="error-text">{{errorText}}</div>
-  <button routerLink="/home" class="btn btn-secondary">Вернуться</button>
+  <button (click)="toHome()" class="btn btn-secondary">Вернуться</button>
 </div>
 
 

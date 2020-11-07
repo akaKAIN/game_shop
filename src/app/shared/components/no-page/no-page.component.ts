@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-no-page',
@@ -8,4 +9,9 @@ import {Component} from '@angular/core';
 export class NoPageComponent {
   errorCode = '404';
   errorText = 'Страница не найдена (или находится в разработке)';
+  constructor(private router: Router) {
+  }
+  public toHome(): void {
+    this.router.navigate(['/home']);
+  }
 }

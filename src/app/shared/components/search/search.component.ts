@@ -8,9 +8,15 @@ import {FormControl, FormGroup} from '@angular/forms';
 })
 export class SearchComponent {
   form: FormGroup;
+
   search(): void {
-    console.log(...this.form.value);
+    const search: string = this.form.value.search;
+    if (search !== null && search.trim() !== '' ) {
+      console.log(...this.form.value);
+      this.form.reset();
+    }
   }
+
   constructor() {
     this.form = new FormGroup({
       search: new FormControl('')

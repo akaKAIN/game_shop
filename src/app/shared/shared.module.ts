@@ -7,7 +7,6 @@ import { SmallSearchFieldComponent } from './components/small-search-field/small
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {RouterModule} from '@angular/router';
 import {ReactiveFormsModule} from '@angular/forms';
-import { MenuListComponent } from './components/menu-list/menu-list.component';
 import {MaterialsModule} from '../modules/materials/materials.module';
 import { SearchComponent } from './components/search/search.component';
 
@@ -18,7 +17,6 @@ import { SearchComponent } from './components/search/search.component';
     NoPageComponent,
     SmallSearchFieldComponent,
     NavBarComponent,
-    MenuListComponent,
     SearchComponent,
   ],
   imports: [
@@ -34,7 +32,6 @@ import { SearchComponent } from './components/search/search.component';
     NoPageComponent,
     SmallSearchFieldComponent,
     NavBarComponent,
-    MenuListComponent,
     RouterModule,
   ]
 })

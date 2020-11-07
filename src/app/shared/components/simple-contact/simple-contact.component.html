@@ -5,7 +5,7 @@
       <mat-icon aria-hidden="false">{{contactIconType}}</mat-icon>
     </div>
 
-    <a *ngIf="contactLink; else noLink" class="contact-info" [href]="contactLink">{{contactText}}</a>
+    <a *ngIf="contactLink; else noLink" class="contact-info" [href]="contactLink" target="_blank">{{contactText}}</a>
     <ng-template #noLink>
       <div class="contact-info">{{contactText}}</div>
     </ng-template>
