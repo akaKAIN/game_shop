@@ -30,4 +30,20 @@ input {
   }
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  color: $color-logo;
+}
+
+.search-form {
+  width: 30vw;
+  @media (max-width: 1050px) {
+    width: 20vw
+  }
+  .search-field {
+    width: 80%;
+  }
+}
+
 
