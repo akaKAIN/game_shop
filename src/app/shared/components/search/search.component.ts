@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
+import {ProductService} from '../../../services/product.service';
 
 @Component({
   selector: 'app-search',
@@ -10,14 +11,16 @@ export class SearchComponent {
   form: FormGroup;
 
   search(): void {
-    const search: string = this.form.value.search;
-    if (search !== null && search.trim() !== '' ) {
-      console.log(...this.form.value);
-      this.form.reset();
+    if (this.form.value.hasOwnProperty('search')) {
+      const search: string = this.form.value.search;
+      if (search !== null && search.trim() !== '') {
+        this.product.searchResult = this.product.filterByNameMatch(search);
+        this.form.reset();
+      }
     }
   }
 
-  constructor() {
+  constructor(private product: ProductService) {
     this.form = new FormGroup({
       search: new FormControl('')
     });

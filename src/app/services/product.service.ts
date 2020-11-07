@@ -5,6 +5,7 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class ProductService {
+  public searchResult: CatalogItem[] = [];
   public catalog: CatalogCategory[] = [
     {
       category: 'category1',
@@ -33,5 +34,10 @@ export class ProductService {
     return category.items.find((item: CatalogItem) => {
       return item.slag === slag;
     });
+  }
+
+  public filterByNameMatch(subName: string): CatalogItem[] {
+    console.log('TODO: search func. Searching:', subName);
+    return [];
   }
 }
