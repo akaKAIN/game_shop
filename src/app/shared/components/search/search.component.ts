@@ -14,7 +14,7 @@ export class SearchComponent {
     if (this.form.value.hasOwnProperty('search')) {
       const search: string = this.form.value.search;
       if (search !== null && search.trim() !== '') {
-        this.product.searchResult = this.product.filterByNameMatch(search);
+        console.log('TODO: queryParams fot product list');
         this.form.reset();
       }
     }

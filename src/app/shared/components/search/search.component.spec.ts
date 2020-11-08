@@ -3,6 +3,7 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {SearchComponent} from './search.component';
 import {SharedModule} from '../../shared.module';
 import {RouterTestingModule} from '@angular/router/testing';
+import {MaterialsModule} from '../../../modules/materials/materials.module';
 
 describe('SearchComponent', () => {
   let component: SearchComponent;

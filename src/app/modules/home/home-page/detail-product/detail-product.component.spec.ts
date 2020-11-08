@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DetailProductComponent } from './detail-product.component';
+import {DetailProductComponent} from './detail-product.component';
+import {RouterTestingModule} from '@angular/router/testing';
+import {SharedModule} from '../../../../shared/shared.module';
 
 describe('DetailProductComponent', () => {
   let component: DetailProductComponent;
@@ -8,9 +10,10 @@ describe('DetailProductComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DetailProductComponent ]
+      declarations: [DetailProductComponent],
+      imports: [SharedModule, RouterTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

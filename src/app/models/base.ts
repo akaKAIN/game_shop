@@ -19,7 +19,7 @@ export interface CatalogItem {
 }
 
 export interface CatalogCategory {
-  category: string;
+  title: string;
   items: CatalogItem[];
 }
 

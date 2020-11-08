@@ -15,8 +15,7 @@ export class DetailProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
-      console.log(params);
-      this.item = this.product.getProductBySlag(params.slag, params.category);
+      console.log('detail params: ', params);
     });
   }
 

@@ -5,10 +5,10 @@ import {Injectable} from '@angular/core';
   providedIn: 'root'
 })
 export class ProductService {
-  public searchResult: CatalogItem[] = [];
+  public productList: CatalogItem[] = [];
   public catalog: CatalogCategory[] = [
     {
-      category: 'category1',
+      title: 'category1',
       items: [
         {id: 1, title: 'Item1 from cat1', description: 'Description item 1', link: 'routeItem1', slag: 'slag-item1'},
         {id: 2, title: 'Item2 from cat1', description: 'Description item 2', link: 'routeItem2', slag: 'slag-item2'},
@@ -17,7 +17,7 @@ export class ProductService {
       ]
     },
     {
-      category: 'category2',
+      title: 'category2',
       items: [
         {id: 1, title: 'Item1 from cat2', description: 'Description item 1', link: 'routeItem1', slag: 'slag-item1'},
         {id: 2, title: 'Item2 from cat2', description: 'Description item 2', link: 'routeItem2', slag: 'slag-item2'},
@@ -27,13 +27,18 @@ export class ProductService {
     },
   ];
 
-  public getProductBySlag(slag: string, categoryName: string): CatalogItem {
-    const category: CatalogCategory = this.catalog.find((cat: CatalogCategory) => {
-      return cat.category === categoryName;
+  constructor() {
+    this.productList = this._getProductList();
+  }
+
+  private _getProductList(): CatalogItem[] {
+    let productList: CatalogItem[] = [];
+    this.catalog.forEach(category => {
+      console.log('Category: ', category);
+      productList = productList.concat(category.items);
     });
-    return category.items.find((item: CatalogItem) => {
-      return item.slag === slag;
-    });
+    console.log('service concat result: ', productList);
+    return productList;
   }
 
   public filterByNameMatch(subName: string): CatalogItem[] {

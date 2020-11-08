@@ -1,8 +1,16 @@
 <app-header-block></app-header-block>
+<div class="content">
 
-<app-catalog-bar></app-catalog-bar>
-<hr style="color: red">
-<div class="container">
-  <router-outlet></router-outlet>
+  <div class="category-menu">
+    <div class="menu-wrapper my-3 mx-3">
+      <app-catalog-bar></app-catalog-bar>
+    </div>
+  </div>
+
+  <div class="container product-list">
+    <router-outlet></router-outlet>
+  </div>
+
 </div>
+
 

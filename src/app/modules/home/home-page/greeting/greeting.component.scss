@@ -1,0 +1,21 @@
+@import '../../../../../styles';
+
+.greeting-wrap {
+  width: 100%;
+  color: $color-logo-passive;
+  font-size: 1.5rem;
+
+  .greeting__title{}
+
+  .greeting__options{
+    li {
+      list-style-type: none;
+    }
+
+    .option-row {
+      display: flex;
+    }
+  }
+
+  .greeting__footer{}
+}
