@@ -1,0 +1,33 @@
+@import '../../../../styles';
+
+::ng-deep .cdk-global-overlay-wrapper {
+  background-color: rgba(0, 0, 0, .5);
+
+  .cdk-overlay-pane {
+    max-width: 90vw;
+
+    .mat-dialog-container {
+      background-color: $bg-main;
+      border: 1px solid $color-logo;
+      box-shadow: 2px 2px 2px 1px $color-logo;
+
+
+      .close-btn {
+        background-color: transparent;
+        border: none;
+        color: $color-logo;
+        transform: rotate(45deg);
+        outline: none;
+        top: -26px;
+        right: -26px;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+
+
+    }
+  }
+}

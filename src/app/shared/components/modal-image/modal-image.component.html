@@ -1,0 +1,9 @@
+<div>
+  <img src="https://via.placeholder.com/600x400" alt="image">
+  <app-modal-image [srcImage]=""></app-modal-image>
+  <button mat-raised-button (click)="openDialog()">Open modal</button>
+  <br />
+  <div *ngIf="email">
+    You signed up with: <p>{{email}}</p>
+  </div>
+</div>

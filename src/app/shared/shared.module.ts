@@ -6,10 +6,11 @@ import {CommonModule} from '@angular/common';
 import { SmallSearchFieldComponent } from './components/small-search-field/small-search-field.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import {RouterModule} from '@angular/router';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MaterialsModule} from '../modules/materials/materials.module';
 import { SearchComponent } from './components/search/search.component';
-import { PalaroidImageComponent } from './components/palaroid-image/palaroid-image.component';
+import { ModalImageComponent } from './components/modal-image/modal-image.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +20,15 @@ import { PalaroidImageComponent } from './components/palaroid-image/palaroid-ima
     SmallSearchFieldComponent,
     NavBarComponent,
     SearchComponent,
-    PalaroidImageComponent,
+    ModalComponent,
+    ModalImageComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     ReactiveFormsModule,
-    MaterialsModule
+    MaterialsModule,
+    FormsModule
   ],
   exports: [
     CommonModule,
@@ -35,7 +38,7 @@ import { PalaroidImageComponent } from './components/palaroid-image/palaroid-ima
     SmallSearchFieldComponent,
     NavBarComponent,
     RouterModule,
-    PalaroidImageComponent,
+    ModalImageComponent
   ]
 })
 

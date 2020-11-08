@@ -13,7 +13,7 @@ import {MaterialsModule} from '../materials/materials.module';
     GreetingComponent,
     CatalogBarComponent,
     DetailProductComponent,
-    ProductListComponent
+    ProductListComponent,
   ],
   imports: [
     SharedModule,

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PalaroidImageComponent } from './palaroid-image.component';
+import { ModalImageComponent } from './modal-image.component';
 
-describe('PalaroidImageComponent', () => {
-  let component: PalaroidImageComponent;
-  let fixture: ComponentFixture<PalaroidImageComponent>;
+describe('ModalImageComponent', () => {
+  let component: ModalImageComponent;
+  let fixture: ComponentFixture<ModalImageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PalaroidImageComponent ]
+      declarations: [ ModalImageComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PalaroidImageComponent);
+    fixture = TestBed.createComponent(ModalImageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
