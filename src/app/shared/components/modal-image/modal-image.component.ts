@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ModalComponent} from '../modal/modal.component';
 import {MatDialog} from '@angular/material/dialog';
 
@@ -8,7 +8,8 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./modal-image.component.scss']
 })
 export class ModalImageComponent implements OnInit {
-  email: string;
+  @Input() srcImage: string;
+  @Input() altImage: string;
 
   constructor(public dialog: MatDialog) {
   }

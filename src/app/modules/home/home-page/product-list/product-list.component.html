@@ -2,7 +2,10 @@
   <div class="product-list-wrap">
     <div class="product-item" *ngFor="let product of products">
       <div class="product-item__image">
-        <app-modal-image></app-modal-image>
+        <app-modal-image
+          srcImage="https://via.placeholder.com/900x600"
+          altImage="PlaceHolder image"
+        ></app-modal-image>
       </div>
       <div class="product-item__title">{{product.title}}</div>
 
