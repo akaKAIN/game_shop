@@ -5,12 +5,19 @@
   width: 100%;
 
   .category-menu {
-    width: 30%;
+    width: 25vw;
+    @media (max-width: 992px) {
+      width: 40vw;
+    }
 
     .menu-wrapper {
     }
   }
 
   .product-list {
+    width: 75vw;
+    @media (max-width: 992px) {
+      width: 60vw;
+    }
   }
 }

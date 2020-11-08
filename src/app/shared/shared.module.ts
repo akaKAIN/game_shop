@@ -9,6 +9,7 @@ import {RouterModule} from '@angular/router';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MaterialsModule} from '../modules/materials/materials.module';
 import { SearchComponent } from './components/search/search.component';
+import { PalaroidImageComponent } from './components/palaroid-image/palaroid-image.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SearchComponent } from './components/search/search.component';
     SmallSearchFieldComponent,
     NavBarComponent,
     SearchComponent,
+    PalaroidImageComponent,
   ],
   imports: [
     CommonModule,
@@ -33,6 +35,7 @@ import { SearchComponent } from './components/search/search.component';
     SmallSearchFieldComponent,
     NavBarComponent,
     RouterModule,
+    PalaroidImageComponent,
   ]
 })
 
