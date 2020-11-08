@@ -16,7 +16,6 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.products);
     this.route.queryParams.subscribe(params => {
       this.products = this.product.catalog.find(category => category.title === params.category).items;
     });

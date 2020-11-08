@@ -34,10 +34,8 @@ export class ProductService {
   private _getProductList(): CatalogItem[] {
     let productList: CatalogItem[] = [];
     this.catalog.forEach(category => {
-      console.log('Category: ', category);
       productList = productList.concat(category.items);
     });
-    console.log('service concat result: ', productList);
     return productList;
   }
 
