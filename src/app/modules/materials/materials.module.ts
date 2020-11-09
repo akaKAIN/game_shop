@@ -15,7 +15,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatCheckboxModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
   ],
   exports: [
     MatButtonModule,
@@ -23,7 +23,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatInputModule,
     MatCheckboxModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
   ]
 })
 export class MaterialsModule {

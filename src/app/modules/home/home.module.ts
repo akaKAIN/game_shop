@@ -19,7 +19,7 @@ import {MaterialsModule} from '../materials/materials.module';
     SharedModule,
     MaterialsModule
   ],
-  bootstrap: [HomePageComponent]
+  bootstrap: [HomePageComponent],
 })
 export class HomeModule {
 }

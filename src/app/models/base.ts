@@ -23,3 +23,9 @@ export interface CatalogCategory {
   items: CatalogItem[];
 }
 
+export interface ModalImageData {
+  title: string;
+  src: string;
+  alt: string;
+}
+

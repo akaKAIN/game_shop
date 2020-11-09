@@ -7,6 +7,7 @@ import {HomeModule} from './modules/home/home.module';
 import {ContactModule} from './modules/contact/contact.module';
 import {MaterialsModule} from './modules/materials/materials.module';
 import {HttpClientModule} from '@angular/common/http';
+import {ModalComponent} from './shared/components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ModalComponent]
 })
 export class AppModule {
 }

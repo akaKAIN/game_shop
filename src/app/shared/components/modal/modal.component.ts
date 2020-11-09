@@ -1,9 +1,6 @@
-import {Component, Inject, Input, OnInit} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 
-interface DialogData {
-  title: string;
-}
 
 @Component({
   selector: 'app-modal',
@@ -11,18 +8,23 @@ interface DialogData {
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
-  @Input() srcImage: string;
-  @Input() altImage: string;
+  srcImage: string;
+  altImage: string;
+  title: string;
 
   constructor(
     public dialogRef: MatDialogRef<ModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData
-  ) {}
+    @Inject(MAT_DIALOG_DATA) public data: any) {
+  }
 
   closeModal(): void {
+    console.log('closing modal window');
     this.dialogRef.close();
   }
 
   ngOnInit(): void {
+    this.title = this.data.title;
+    this.srcImage = this.data.src;
+    this.altImage = this.data.alt;
   }
 }
