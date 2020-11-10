@@ -4,12 +4,12 @@
   background-color: rgba(0, 0, 0, .5);
 
   .cdk-overlay-pane {
-    max-width: 90vw;
 
     .mat-dialog-container {
       background-color: $bg-main;
       border: 1px solid $color-logo;
       box-shadow: 2px 2px 2px 1px $color-logo;
+      overflow: hidden;
 
 
       .close-btn {
@@ -29,5 +29,19 @@
 
 
     }
+  }
+}
+
+.image-wrap {
+  max-width: inherit;
+  max-height: inherit;
+  height: auto;
+
+  .image-title {
+    color: $color-logo;
+  }
+
+  & img {
+    //object-fit: cover;
   }
 }
