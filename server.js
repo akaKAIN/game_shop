@@ -2,10 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static('./dist/real-meat'));
+app.use(express.static('./dist/shop'));
 
 app.get('/*', function (req, res) {
-  res.sendFile('index.html', { root: 'dist/real-meat' }
+  res.sendFile('index.html', { root: 'dist/shop' }
   );
 });
 
