@@ -1,0 +1,20 @@
+<div class="greeting-wrap mt-3 ml-3">
+  <div class="greeting__title">
+    <p>{{greetingTitle}}</p>
+  </div>
+  <div class="greeting__options">
+    <ul>
+      <li *ngFor="let item of list">
+        <div class="option-row">
+          <mat-icon aria-hidden="false" aria-label="base options">thumb_up</mat-icon>
+          <p>{{item}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="greeting__footer">
+    <p>{{greetingFooter}}</p>
+  </div>
+</div>
+

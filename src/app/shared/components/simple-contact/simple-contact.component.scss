@@ -1,0 +1,44 @@
+@import '../../../../styles';
+
+.contact-item {
+  color: $color-logo;
+  display: flex;
+  flex-direction: column;
+  font-family: Veneer, serif;
+  font-size: 1.4rem;
+  @media (max-width: 767.98px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: .9rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: .7rem;
+  }
+
+  .contact-wrapper {
+    align-items: center;
+
+    .contact__icon {
+      .material-icons {
+        @media (max-width: 575.98px) {
+          font-size: 1rem !important;
+        }
+        @media (max-width: 480px) {
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
+
+.contact-info {
+  text-decoration: none;
+  color: $color-logo;
+}
+
+small {
+  color: $color-logo-passive;
+}
