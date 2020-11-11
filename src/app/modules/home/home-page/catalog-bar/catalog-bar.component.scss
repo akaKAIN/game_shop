@@ -1,0 +1,23 @@
+@import '../../../../../styles';
+
+.catalog-bar {
+  width: 100%;
+
+  .catalog-wrap {
+    display: flex;
+    flex-direction: column;
+
+    .category-btn {
+      background-color: $bg-main-lighter !important;
+      color: $color-logo-passive;
+      &:hover {
+        color: $color-logo;
+      }
+
+      &.active {
+        background-color: $color-logo-opacity !important;
+        color: #282828;
+      }
+    }
+  }
+}

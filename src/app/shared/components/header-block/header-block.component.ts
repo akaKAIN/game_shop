@@ -10,13 +10,13 @@ export class HeaderBlockComponent {
   contacts: SimpleContactItem[] = [
     {
       contactTitle: 'WhatsApp',
-      contactText: '+7 926 890 6086',
+      contactText: '+7 909 843-89-48',
       contactIconType: 'phone',
-      contactLink: 'https://wa.me/79268906086'
+      contactLink: 'https://wa.me/79098438948'
     },
     {
       contactTitle: 'Instagram',
-      contactIconType: 'motion_photos_on',
+      contactIconType: 'mobile_screen_share',
       contactText: '@realmeat_khv',
       contactLink: 'https://instagram.com/_u/realmeat_khv'
     },

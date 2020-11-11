@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ContactPageComponent } from './contact-page.component';
+import {ContactPageComponent} from './contact-page.component';
+import {RouterTestingModule} from '@angular/router/testing';
+import {SharedModule} from '../../../shared/shared.module';
 
 describe('ContactPageComponent', () => {
   let component: ContactPageComponent;
@@ -8,9 +10,10 @@ describe('ContactPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactPageComponent ]
+      declarations: [ContactPageComponent],
+      imports: [SharedModule, RouterTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

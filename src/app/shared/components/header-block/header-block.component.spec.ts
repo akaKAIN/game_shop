@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { HeaderBlockComponent } from './header-block.component';
+import {HeaderBlockComponent} from './header-block.component';
+import {SharedModule} from '../../shared.module';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('HeaderBlockComponent', () => {
   let component: HeaderBlockComponent;
@@ -8,9 +10,10 @@ describe('HeaderBlockComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderBlockComponent ]
+      declarations: [HeaderBlockComponent],
+      imports: [SharedModule, RouterTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

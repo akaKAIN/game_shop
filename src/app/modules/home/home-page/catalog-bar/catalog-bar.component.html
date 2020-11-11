@@ -1,0 +1,11 @@
+<div class="catalog-bar">
+  <div class="catalog-wrap">
+    <button
+      mat-raised-button color="warn" class="category-btn my-1"
+      *ngFor="let category of catalog"
+      [routerLink]="['catalog']"
+      [queryParams]="{category: category.title}"
+      [routerLinkActive]="'active'"
+    >{{category.title}}</button>
+  </div>
+</div>

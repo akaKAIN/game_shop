@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PromotionPageComponent } from './promotion-page.component';
+import {PromotionPageComponent} from './promotion-page.component';
+import {SharedModule} from '../../../shared/shared.module';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('PromotionPageComponent', () => {
   let component: PromotionPageComponent;
@@ -8,9 +10,10 @@ describe('PromotionPageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PromotionPageComponent ]
+      declarations: [PromotionPageComponent],
+      imports: [SharedModule, RouterTestingModule]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

@@ -1,7 +1,8 @@
 @import "../../../../styles";
 
 header {
-  height: 5rem;
+  padding: .8rem;
+  height: max-content;
   width: 100%;
   background-color: $bg-main;
   color: $color-logo;
@@ -14,10 +15,22 @@ header {
 
 .contacts {
   display: flex;
+  @media (max-width: 350px) {
+    flex-direction: column;
+  }
 }
 
 .contact:last-child {
   margin-left: 3rem;
+  @media (max-width: 575.98px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 480px) {
+    margin-left: 1rem;
+  }
+  @media (max-width: 350px) {
+    margin-left: 0 !important;
+  }
 }
 
 .logo {

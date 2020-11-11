@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-small-search-field',
@@ -6,14 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./small-search-field.component.scss']
 })
 export class SmallSearchFieldComponent implements OnInit {
-  submit(text: string): void {
-    if (text.trim()){
-      console.log(text);
-    }
-  }
-  constructor() {}
+  form: FormGroup;
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      search: new FormControl('')
+    });
   }
 
+  submit(): void {
+    console.log({...this.form.value});
+    this.form.reset();
+  }
 }
