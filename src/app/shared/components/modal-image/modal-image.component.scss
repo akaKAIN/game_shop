@@ -1,13 +1,18 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '../../../../styles';
 
-$shadow-size: 2.5rem;
+$shadow-size: 3vw;
 $shadow-color: #282828;
 
 
 .sizer {
   height: 15rem;
   width: 15rem;
+}
+
+.sizer-wrap {
+
+
 }
 
 .image-wrap {
@@ -27,7 +32,11 @@ $shadow-color: #282828;
     box-shadow: inset 0 0 $shadow-size $shadow-color,
     inset 0 0 $shadow-size $shadow-color,
     inset 0 0 $shadow-size $shadow-color;
-
+    border: 1px solid $color-logo-passive;
+    &:hover {
+      border: 1px solid $color-logo;
+      cursor: pointer;
+    }
   }
 
   img {

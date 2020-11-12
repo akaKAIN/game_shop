@@ -1,8 +1,25 @@
 .product-card {
+  margin: 1rem;
+  padding: 1rem;
 
-  &__image {
-  }
+  .product-card__content {
+    .image-wrap {
+      .product-card__image {
+      }
+    }
 
-  &__title {
+    .text-wrap {
+      .product-card__title {
+      }
+
+      .product-card__desc {
+      }
+
+      .product-card__prise {
+      }
+
+      .product-card__buy-btn {
+      }
+    }
   }
 }

@@ -1,13 +1,27 @@
 <div class="product-card">
-  <div class="product-card__image">
-<!--    https://via.placeholder.com/150-->
-    <app-modal-image
-      [srcImage]="srcImage"
-      [altImage]="altImage"
-      [srcModalImage]="srcImage"
-      [title]="title"
-    ></app-modal-image>
+  <div class="product-card__content d-flex row">
+
+    <div class="col-5 image-wrap">
+      <div class="product-card__image">
+        <app-modal-image
+          [srcImage]="srcImage"
+          [altImage]="altImage"
+          [srcModalImage]="srcImage"
+          [title]="title"
+        ></app-modal-image>
+      </div>
+    </div>
+
+    <div class="col-7 text-wrap">
+      <div class="product-card__title">{{title}}</div>
+      <div class="product-card__desc">{{description}}</div>
+      <div class="row">
+        <div class="product-card__prise"></div>
+        <div class="product-card__buy-btn"></div>
+      </div>
+    </div>
   </div>
-  <div class="product-item__title">{{title}}</div>
+
+
 
 </div>
