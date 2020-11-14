@@ -15,16 +15,17 @@
 
     .text-wrap {
       padding: .8rem .3rem;
+      max-height: 15rem;
       .product-card__title {
         font-size: 2rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
       }
 
       .text-content-wrap {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 70%;
+        height: 11rem;
         .product-card__desc {
           font-size: 1rem;
         }
@@ -38,8 +39,9 @@
               display: flex;
               flex-direction: column;
               .price-title {
-                font-size: .85rem;
+                font-size: .75rem;
                 margin-bottom: .5rem;
+                text-decoration: underline;
               }
 
               .price-val {
