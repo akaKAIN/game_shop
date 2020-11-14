@@ -1,7 +1,7 @@
 <div class="product-card">
-  <div class="product-card__content d-flex row">
+  <div class="product-card__content row">
 
-    <div class="col-5 image-wrap">
+    <div class="col-3 image-wrap">
       <div class="product-card__image">
         <app-modal-image
           [srcImage]="srcImage"
@@ -12,16 +12,32 @@
       </div>
     </div>
 
-    <div class="col-7 text-wrap">
+    <div class="col-8 text-wrap">
       <div class="product-card__title">{{title}}</div>
-      <div class="product-card__desc">{{description}}</div>
-      <div class="row">
-        <div class="product-card__prise"></div>
-        <div class="product-card__buy-btn"></div>
+      <div class="text-content-wrap">
+        <div class="product-card__desc">{{description}}</div>
+        <div class="price-wrap row">
+          <div class="product-card__price col">
+            <div class="price-item">
+              <div class="price-title">Стоимость:</div>
+              <div class="price-val">
+                140<i class="fa fa-rub ml-2 rub-label" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="button-wrap ml-5">
+              <button mat-flat-button color="warn" class="purchase-btn">
+                КУПИТЬ
+              </button>
+            </div>
+          </div>
+
+
+        </div>
       </div>
+
     </div>
+
+
   </div>
-
-
 
 </div>

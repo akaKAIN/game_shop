@@ -4,7 +4,7 @@
   "scripts": {
     "start:prod": "node server.js",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --hmr",
     "start:host": "ng serve --host 0.0.0.0",
     "build": "ng build",
     "test": "ng test",
