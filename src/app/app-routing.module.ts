@@ -9,17 +9,17 @@ import {ProductListComponent} from './modules/home/home-page/product-list/produc
 const routes: Routes = [
   {
     path: 'home', component: HomePageComponent, children: [
-      {path: '', component: GreetingComponent},
+      {path: '', component: GreetingComponent, pathMatch: 'full'},
       {path: 'catalog', component: ProductListComponent}
     ]
   },
   {path: 'contact-us', component: ContactPageComponent},
-  {path: '', redirectTo: 'catalog', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: NoPageComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 

@@ -1,3 +1,6 @@
-<div (click)="openDialog()">
-  <img [src]="srcImage" [alt]="altImage">
+<div class="image-wrap sizer">
+  <div class="vignette sizer" (click)="openDialog()"></div>
+  <div class="sizer-wrap">
+    <img class="img-fluid" [src]="srcImage" [alt]="altImage">
+  </div>
 </div>

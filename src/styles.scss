@@ -34,6 +34,7 @@ $color-logo-opacity: rgba(221, 68, 7, .6);
 body {
   box-sizing: border-box;
   background-color: $bg-main;
+  color: $color-logo-passive;
 }
 
 html, body { height: 100%; }

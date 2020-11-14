@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {CatalogCategory} from '../../../../models/base';
 import {ProductService} from '../../../../services/product.service';
+import {Category} from '../../../../models/base';
 
 @Component({
   selector: 'app-catalog-bar',
@@ -8,9 +8,10 @@ import {ProductService} from '../../../../services/product.service';
   styleUrls: ['./catalog-bar.component.scss']
 })
 export class CatalogBarComponent implements OnInit {
-  catalog: CatalogCategory[];
+  catalog: Category[];
+
   constructor(private product: ProductService) {
-    this.catalog = product.catalog;
+    this.catalog = product.categories;
   }
 
   ngOnInit(): void {

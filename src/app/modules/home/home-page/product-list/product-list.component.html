@@ -1,16 +1,13 @@
 <div class="container-fluid">
   <div class="product-list-wrap">
-    <div class="product-item" *ngFor="let product of products">
-      <div class="product-item__image">
-        <app-modal-image
-          srcImage="https://via.placeholder.com/150"
-          altImage="PlaceHolder image"
-          srcModalImage="./assets/img/content/photo_2020-11-01_15-39-25.jpg"
-          [title]="product.title"
-        ></app-modal-image>
-      </div>
-      <div class="product-item__title">{{product.title}}</div>
-
-    </div>
+    <app-product-card
+      *ngFor="let product of products"
+      [srcImage]="'./assets/img/content/photo_2020-11-01_15-35-23.jpg'"
+      [altImage]="product.title"
+      [title]="product.title"
+      [description]="product.description"
+      [price]="product.price"
+      [productionTime]="product.productionTime"
+    ></app-product-card>
   </div>
 </div>

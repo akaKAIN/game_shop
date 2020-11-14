@@ -13,6 +13,9 @@
       &:hover {
         color: $color-logo;
       }
+      &:focus {
+        outline: none;
+      }
 
       &.active {
         background-color: $color-logo-opacity !important;

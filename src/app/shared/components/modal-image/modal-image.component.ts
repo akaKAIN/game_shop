@@ -31,8 +31,6 @@ export class ModalImageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('init modal-image-component');
-    console.log(this.srcModalImage);
   }
 
 }

@@ -1,23 +1,23 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {DetailProductComponent} from './detail-product.component';
+import {ProductCardComponent} from './product-card.component';
+import {SharedModule} from '../../shared.module';
 import {RouterTestingModule} from '@angular/router/testing';
-import {SharedModule} from '../../../../shared/shared.module';
 
-describe('DetailProductComponent', () => {
-  let component: DetailProductComponent;
-  let fixture: ComponentFixture<DetailProductComponent>;
+describe('ProductCardComponent', () => {
+  let component: ProductCardComponent;
+  let fixture: ComponentFixture<ProductCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DetailProductComponent],
+      declarations: [ProductCardComponent],
       imports: [SharedModule, RouterTestingModule]
     })
       .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DetailProductComponent);
+    fixture = TestBed.createComponent(ProductCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,14 +3,15 @@ import {HeaderBlockComponent} from './components/header-block/header-block.compo
 import {SimpleContactComponent} from './components/simple-contact/simple-contact.component';
 import {NoPageComponent} from './components/no-page/no-page.component';
 import {CommonModule} from '@angular/common';
-import { SmallSearchFieldComponent } from './components/small-search-field/small-search-field.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import {SmallSearchFieldComponent} from './components/small-search-field/small-search-field.component';
+import {NavBarComponent} from './components/nav-bar/nav-bar.component';
 import {RouterModule} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MaterialsModule} from '../modules/materials/materials.module';
-import { SearchComponent } from './components/search/search.component';
-import { ModalImageComponent } from './components/modal-image/modal-image.component';
-import { ModalComponent } from './components/modal/modal.component';
+import {SearchComponent} from './components/search/search.component';
+import {ModalImageComponent} from './components/modal-image/modal-image.component';
+import {ModalComponent} from './components/modal/modal.component';
+import {ProductCardComponent} from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ModalComponent } from './components/modal/modal.component';
     SearchComponent,
     ModalComponent,
     ModalImageComponent,
+    ProductCardComponent,
   ],
   imports: [
     CommonModule,
@@ -38,7 +40,8 @@ import { ModalComponent } from './components/modal/modal.component';
     SmallSearchFieldComponent,
     NavBarComponent,
     RouterModule,
-    ModalImageComponent
+    ModalImageComponent,
+    ProductCardComponent
   ]
 })
 

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ProductService} from '../../../../services/product.service';
 import {ActivatedRoute} from '@angular/router';
-import {CatalogItem} from '../../../../models/base';
+import {CatalogItem, Category} from '../../../../models/base';
 
 @Component({
   selector: 'app-product-list',
@@ -18,7 +18,9 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       if (params.hasOwnProperty('category')) {
-        this.products = this.product.catalog.find(category => category.title === params.category).items;
+        const categorySlug: string = params.category;
+        const activeCategory: Category = this.product.categories.find((category: Category) => category.slag === categorySlug);
+        this.products = this.product.catalog.filter((prod: CatalogItem) => prod.categoryID === activeCategory.id);
       } else {
         console.log('NO QUERY');
       }
