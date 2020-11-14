@@ -104,7 +104,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 1,
-      price: {cost: 800, weightMin: 100, weightStep: 100}
+      price: {cost: 800, weightMin: 500, weightStep: 200}
     },
     {
       id: 10,
@@ -112,7 +112,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 3,
       categoryID: 1,
-      price: {cost: 850, weightMin: 100, weightStep: 100}
+      price: {cost: 850, weightMin: 500, weightStep: 200}
     },
     {
       id: 11,
@@ -120,7 +120,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 3,
       categoryID: 1,
-      price: {cost: 850, weightMin: 100, weightStep: 100}
+      price: {cost: 850, weightMin: 500, weightStep: 200}
     },
     {
       id: 12,
@@ -128,7 +128,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 4,
       categoryID: 1,
-      price: {cost: 850, weightMin: 100, weightStep: 100}
+      price: {cost: 850, weightMin: 500, weightStep: 200}
     },
     {
       id: 13,
@@ -136,7 +136,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 4,
       categoryID: 1,
-      price: {cost: 950, weightMin: 100, weightStep: 100}
+      price: {cost: 950, weightMin: 500, weightStep: 200}
     },
     {
       id: 14,
@@ -144,7 +144,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 3,
       categoryID: 1,
-      price: {cost: 950, weightMin: 100, weightStep: 100}
+      price: {cost: 950, weightMin: 500, weightStep: 200}
     },
     {
       id: 15,
@@ -152,7 +152,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 450, weightMin: 100, weightStep: 100}
+      price: {cost: 450, weightMin: 1000, weightStep: 500}
     },
     {
       id: 16,
@@ -160,7 +160,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 450, weightMin: 100, weightStep: 100}
+      price: {cost: 450, weightMin: 1000, weightStep: 500}
     },
     {
       id: 16,
@@ -168,7 +168,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 450, weightMin: 100, weightStep: 100}
+      price: {cost: 450, weightMin: 1000, weightStep: 500}
     },
     {
       id: 17,
@@ -176,7 +176,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 470, weightMin: 100, weightStep: 100}
+      price: {cost: 470, weightMin: 1000, weightStep: 500}
     },
     {
       id: 18,
@@ -184,7 +184,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 470, weightMin: 100, weightStep: 100}
+      price: {cost: 470, weightMin: 1000, weightStep: 500}
     },
     {
       id: 19,
@@ -193,7 +193,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 0,
-      price: {cost: 470, weightMin: 100, weightStep: 100}
+      price: {cost: 470, weightMin: 1000, weightStep: 500}
     }
   ];
 
