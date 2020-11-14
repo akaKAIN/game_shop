@@ -18,8 +18,10 @@
         <div class="product-card__desc">{{description}}
           <div>
             <p><span>время изговтовления: </span><span>{{productionTime}} дн.</span></p>
-            <p><span>минимальный вес: </span><span>{{price.weightMin}}</span></p>
-            <p><span>весовой шаг: </span><span>{{price.weightStep}}</span></p>
+            <p><span>минимальный заказ: </span>
+              <span>{{printWeight(price.weightMin)}}</span>
+            </p>
+            <p><span>весовой шаг: </span><span>{{printWeight(price.weightStep)}}</span></p>
           </div>
 
         </div>

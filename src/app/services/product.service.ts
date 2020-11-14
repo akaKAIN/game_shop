@@ -152,7 +152,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 450, weightMin: 1000, weightStep: 500}
+      price: {cost: 450, weightMin: 1000, weightStep: 1000}
     },
     {
       id: 16,
@@ -160,7 +160,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 450, weightMin: 1000, weightStep: 500}
+      price: {cost: 450, weightMin: 1000, weightStep: 1000}
     },
     {
       id: 16,
@@ -168,7 +168,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 450, weightMin: 1000, weightStep: 500}
+      price: {cost: 450, weightMin: 1000, weightStep: 1000}
     },
     {
       id: 17,
@@ -176,7 +176,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 470, weightMin: 1000, weightStep: 500}
+      price: {cost: 470, weightMin: 1000, weightStep: 1000}
     },
     {
       id: 18,
@@ -184,7 +184,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 2,
-      price: {cost: 470, weightMin: 1000, weightStep: 500}
+      price: {cost: 470, weightMin: 1000, weightStep: 1000}
     },
     {
       id: 19,
@@ -193,7 +193,7 @@ export class ProductService {
       photoUrl: 'link',
       productionTime: 1,
       categoryID: 0,
-      price: {cost: 470, weightMin: 1000, weightStep: 500}
+      price: {cost: 470, weightMin: 1000, weightStep: 1000}
     }
   ];
 

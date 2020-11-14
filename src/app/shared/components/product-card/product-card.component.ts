@@ -19,4 +19,11 @@ export class ProductCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  printWeight(weightNum: number): string {
+    const weight: number = weightNum / 1000;
+    if (weight < 1) {
+      return `${weightNum} гр`;
+    }
+    return `${weight} кг`;
+  }
 }
