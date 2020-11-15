@@ -37,7 +37,7 @@ export class ProductService {
     {
       id: 1,
       title: 'Паштет из свинной печени',
-      photoUrl: 'routeItem1',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 3,
       price: {cost: 500, weightMin: 100, weightStep: 100}
@@ -45,7 +45,7 @@ export class ProductService {
     {
       id: 2,
       title: 'Паштет из говяжей печени',
-      photoUrl: 'routeItem2',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 3,
       price: {cost: 600, weightMin: 100, weightStep: 100}
@@ -53,7 +53,7 @@ export class ProductService {
     {
       id: 3,
       title: 'Паштет из куриной печени',
-      photoUrl: 'routeItem3',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 3,
       price: {cost: 600, weightMin: 100, weightStep: 100}
@@ -61,7 +61,7 @@ export class ProductService {
     {
       id: 4,
       title: 'Паштет из куриной печени и сердечек',
-      photoUrl: 'routeItem1',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 3,
       price: {cost: 800, weightMin: 100, weightStep: 100}
@@ -69,7 +69,7 @@ export class ProductService {
     {
       id: 5,
       title: 'Паштет из куриной печени и сердечек обёрнутый в бекон',
-      photoUrl: 'routeItem1',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 3,
       price: {cost: 1000, weightMin: 100, weightStep: 100}
@@ -77,7 +77,7 @@ export class ProductService {
     {
       id: 6,
       title: 'Холодец из свинины',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 4,
       price: {cost: 400, weightMin: 100, weightStep: 100}
@@ -85,7 +85,7 @@ export class ProductService {
     {
       id: 7,
       title: 'Холодец из свинины и курицы',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 4,
       price: {cost: 450, weightMin: 100, weightStep: 100}
@@ -93,7 +93,7 @@ export class ProductService {
     {
       id: 8,
       title: 'Холодец из говядины',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 4,
       price: {cost: 500, weightMin: 100, weightStep: 100}
@@ -101,7 +101,7 @@ export class ProductService {
     {
       id: 9,
       title: 'Сальтисон из свинной рульки и постной свинины',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 1,
       price: {cost: 800, weightMin: 500, weightStep: 200}
@@ -109,7 +109,7 @@ export class ProductService {
     {
       id: 10,
       title: 'Ветчина свинная',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 3,
       categoryID: 1,
       price: {cost: 850, weightMin: 500, weightStep: 200}
@@ -117,7 +117,7 @@ export class ProductService {
     {
       id: 11,
       title: 'Ветчина свино-куриная',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 3,
       categoryID: 1,
       price: {cost: 850, weightMin: 500, weightStep: 200}
@@ -125,7 +125,7 @@ export class ProductService {
     {
       id: 12,
       title: 'Сервелат свинной с горчичным семенем и паприкой',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 4,
       categoryID: 1,
       price: {cost: 850, weightMin: 500, weightStep: 200}
@@ -133,7 +133,7 @@ export class ProductService {
     {
       id: 13,
       title: 'Сервелат свинина-говядина',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 4,
       categoryID: 1,
       price: {cost: 950, weightMin: 500, weightStep: 200}
@@ -141,7 +141,7 @@ export class ProductService {
     {
       id: 14,
       title: 'Мортаделла с фисташками',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 3,
       categoryID: 1,
       price: {cost: 950, weightMin: 500, weightStep: 200}
@@ -149,7 +149,7 @@ export class ProductService {
     {
       id: 15,
       title: 'Колбаски с чесноком. черным перцем и сумахом',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 2,
       price: {cost: 450, weightMin: 1000, weightStep: 1000}
@@ -157,7 +157,7 @@ export class ProductService {
     {
       id: 16,
       title: 'Колбаски с зеленью (укроп, петрушка, базилик)',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 2,
       price: {cost: 450, weightMin: 1000, weightStep: 1000}
@@ -165,7 +165,7 @@ export class ProductService {
     {
       id: 16,
       title: 'Колбаски с копченой паприкой',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 2,
       price: {cost: 450, weightMin: 1000, weightStep: 1000}
@@ -173,7 +173,7 @@ export class ProductService {
     {
       id: 17,
       title: 'Колбаски с вяленными томатами',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 2,
       price: {cost: 470, weightMin: 1000, weightStep: 1000}
@@ -181,7 +181,7 @@ export class ProductService {
     {
       id: 18,
       title: 'Колбаски с копченым сыром',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 2,
       price: {cost: 470, weightMin: 1000, weightStep: 1000}
@@ -190,7 +190,7 @@ export class ProductService {
       id: 19,
       title: 'Колбаски ферментированные',
       description: 'Имеют кислинку, как сыровяленные колбасы',
-      photoUrl: 'link',
+      photoUrl: './assets/img/special/snack_meat_meta-card.webp',
       productionTime: 1,
       categoryID: 0,
       price: {cost: 470, weightMin: 1000, weightStep: 1000}
