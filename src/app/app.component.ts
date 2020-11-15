@@ -11,7 +11,7 @@ export class AppComponent {
     this.title.setTitle('RealMeat | Мясные изделия на заказ');
     this.meta.addTag({name: 'application', content: 'site:RealMeat'});
     this.meta.addTag({name: 'author', content: 'akaKAIN'});
-    this.meta.addTag({name: 'image', content: './assets/img/special/snack_meat_meta-card.webp'});
+    this.meta.addTag({name: 'image', content: 'https://real-meat.herokuapp.com/assets/img/special/snack_meat_meta-card.webp'});
     this.meta.addTag({name: 'description', content: ''});
 
     this.meta.addTags([
