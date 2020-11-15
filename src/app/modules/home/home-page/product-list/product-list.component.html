@@ -2,7 +2,7 @@
   <div class="product-list-wrap">
     <app-product-card
       *ngFor="let product of products"
-      [srcImage]="'./assets/img/content/photo_2020-11-01_15-35-23.jpg'"
+      [srcImage]="product.photoUrl"
       [altImage]="product.title"
       [title]="product.title"
       [description]="product.description"
