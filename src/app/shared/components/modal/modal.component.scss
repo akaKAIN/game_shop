@@ -9,7 +9,17 @@
       background-color: $bg-main;
       border: 1px solid $color-logo;
       box-shadow: 2px 2px 2px 1px $color-logo;
+      padding: 20px 20px 40px 20px;
       overflow: hidden;
+
+      .mat-dialog-content {
+        padding: 0;
+      }
+
+      .modal-content {
+        background-color: $bg-main;
+        border: none;
+      }
 
 
       .close-btn {
@@ -18,8 +28,8 @@
         color: $color-logo;
         transform: rotate(45deg);
         outline: none;
-        top: -26px;
-        right: -26px;
+        top: -20px;
+        right: -20px;
 
         &:focus {
           border: none;
@@ -33,15 +43,20 @@
 }
 
 .image-wrap {
-  max-width: inherit;
-  max-height: inherit;
-  height: auto;
+  width: max-content;
+  height: inherit;
+  overflow: hidden;
+  margin: 0 auto;
 
   .image-title {
     color: $color-logo;
+    font-size: 1.3rem;
+    margin-top: 10px;
   }
 
-  & img {
-    //object-fit: cover;
+  .image {
+    width: auto;
+    max-height: inherit;
+    border: 2px solid $color-logo-passive;
   }
 }
