@@ -19,7 +19,6 @@ export class ModalComponent implements OnInit {
   }
 
   closeModal(): void {
-    console.log('closing modal window');
     this.dialogRef.close();
   }
 
